@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "es2015",
+    "module": "commonjs",
+    "declaration": false,
+    "strict": true,
+    "removeComments": false,
+    "stripInternal": true
+  },
+  "files": [
+    "./src/index.ts"
+  ]
+}

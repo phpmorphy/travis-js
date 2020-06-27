@@ -3,11 +3,9 @@ Travis CI - setup for JavaScript
 
 ## Оглавление
 -   Введение
-
 -   [Установка](#установка)
     -   npm
     -   yarn
-
 -   [Подключение](#подключение)
     -   CommonJS
     -   ES Modules

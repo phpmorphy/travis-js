@@ -1,6 +1,10 @@
 language: node_js
 
 node_js:
+  - 4
+  - 5
+  - 6
+  - 7
   - 8
   - 9
   - 10
@@ -12,16 +16,23 @@ node_js:
 jobs:
   include:
     - node_js: 4
-      install: npm install mocha@^3 chai@^3
+      install: npm install nyc@^11 mocha@^3 chai@^3 coveralls@^2
     - node_js: 5
+      install: npm install nyc@^11 mocha@^4 chai@^4 coveralls@^2
     - node_js: 6
+      install: npm install nyc@^14 mocha@^6 chai@^4 coveralls@^3
     - node_js: 7
+      install: npm install nyc@^14 mocha@^6 chai@^4 coveralls@^3
+    - node_js: 8
+      install: npm install nyc@^15 mocha@^7 chai@^4 coveralls@^3
+    - node_js: 9
+      install: npm install nyc@^15 mocha@^7 chai@^4 coveralls@^3
 
 env:
   global:
     - COVERALLS_PARALLEL=true
 
-install: npm install nyc mocha chai
+install: npm install nyc@^15 mocha@^8 chai@^4 coveralls@^3
 
 after_success: npm run coverage
 

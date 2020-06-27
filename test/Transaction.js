@@ -1,5 +1,5 @@
 if (typeof window === 'undefined') {
-  var umi = require('../../')
+  var umi = require('../')
   var assert = require('chai').assert
 }
 
